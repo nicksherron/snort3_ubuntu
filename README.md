@@ -129,7 +129,7 @@ cd ~/snort_src/hyperscan-5.2.0-build/
 ./bin/unit-hyperscan
 ```
 
-Snort has an optional requirement for flatbuers, A memory eicient serialization library:
+Snort has an optional requirement for flatbuffers, A memory efficient serialization library:
 ```
 cd ~/snort_src
 wget https://github.com/google/flatbuffers/archive/v1.11.0.tar.gz \
