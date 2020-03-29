@@ -1,8 +1,7 @@
 # Installing snort3 on ubuntu
 [source "Snort3 on Ubuntu 18 & 19"](https://snort-org-site.s3.amazonaws.com/production/document_files/files/000/000/211/original/Snort3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIXACIED2SPMSC7GA%2F20200329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200329T084137Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Signature=c09c75bd73b1274844a512e369d939fcffffa171dd651b878a4e116c00d66a17)
 
-## prequisites
-
+## prep
 First, ensure your system is up to date and has the latest list of packages:
 ```
 sudo apt-get update && sudo apt-get dist-upgrade -y
@@ -14,6 +13,8 @@ one folder:
 mkdir ~/snort_src
 cd ~/snort_src
 ```
+
+## prequisites
 
 ```
 sudo apt-get install -y build-essential autotools-dev libdumbnet-dev \
