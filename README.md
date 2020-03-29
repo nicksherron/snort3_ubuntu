@@ -107,18 +107,18 @@ number 1.58, and the Ubuntu repository version is too old. Download the Boost 1.
 not install:
 ```
 cd ~/snort_src
-wget https://dl.bintray.com/boostorg/release/1.71.0/source/boost_1_71_0.tar.gz
-tar -xvzf boost_1_71_0.tar.gz
+wget https://downloads.sourceforge.net/project/boost/boost/1.72.0/boost_1_72_0.tar.gz\?r\=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fboost%2Ffiles%2Fboost%2F1.72.0%2Fboost_1_72_0.tar.gz%2Fdownload\&ts\=1585474662 -O boost_1_72_0.tar.gz
+tar -xvzf boost_1_72_0.tar.gz
 ```
 
 Install Hyperscan 5.2 from source, referencing the location of the Boost headers source directory:
-```
+``` cm
 cd ~/snort_src
 wget https://github.com/intel/hyperscan/archive/v5.2.0.tar.gz
 tar -xvzf v5.2.0.tar.gz
 mkdir ~/snort_src/hyperscan-5.2.0-build
 cd hyperscan-5.2.0-build/
-cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DBOOST_ROOT=~/snort_src/boost_1_71_0/ ../hyperscan-5.2.0
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DBOOST_ROOT=~/snort_src/boost_1_72_0/ ../hyperscan-5.2.0
 make
 sudo make install
 ```
