@@ -103,7 +103,7 @@ sudo make install
 
 Hyperscan requires the Boost C++ Libraries. Note that we are not using the Ubuntu repository version
 of the boost headers (libboost-all-dev) because Hyperscan requires boost libraries at or above version
-number 1.58, and the Ubuntu repository version is too old. Download the Boost 1.71.0 libraries, but do
+number 1.58, and the Ubuntu repository version is too old. Download the Boost 1.72.0 libraries, but do
 not install:
 ```
 cd ~/snort_src
